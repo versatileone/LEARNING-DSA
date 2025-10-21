@@ -17,20 +17,20 @@ int main(){
     int size=10;
     int i =0,j=size-1;
     while(i<j){
-        if(arr[i]==2){
+        if(arr[i]==2 && arr[j]!=2){
+            swap(arr[i],arr[j]);
+            i++;
+            j++;
+                }
+        else if(arr[i]!=2){
+            i++;
+                }
+        else{
+            j--;
+}
+ 
 
-            if(arr[j]!=2){
-                swap(arr[i],arr[j]);
-                    while(arr[j]==2){
-                        j--;
-
-                    }
-            }
-            
-        }
-        i++;
-
-    }
+}
     i=0,j=size-1;
     while(i<j){
         if(arr[j]==2 || arr[j]==1){
